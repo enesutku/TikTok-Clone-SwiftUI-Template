@@ -14,6 +14,15 @@
 		BCE499492BF21C5100008159 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE499482BF21C5100008159 /* MainTabView.swift */; };
 		BCE4994B2BF2239B00008159 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE4994A2BF2239B00008159 /* FeedView.swift */; };
 		BCE4994D2BF224BC00008159 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE4994C2BF224BC00008159 /* FeedCell.swift */; };
+		BCE4994F2BF22DC800008159 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE4994E2BF22DC800008159 /* ExploreView.swift */; };
+		BCE499512BF22E1B00008159 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE499502BF22E1B00008159 /* UserCell.swift */; };
+		BCE499532BF2453C00008159 /* TrendingHashtags.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE499522BF2453C00008159 /* TrendingHashtags.swift */; };
+		BCE499572BF24C3900008159 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE499562BF24C3900008159 /* InboxView.swift */; };
+		BCE499592BF25B4800008159 /* InboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE499582BF25B4800008159 /* InboxCell.swift */; };
+		BCE4995B2BF25D7F00008159 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE4995A2BF25D7F00008159 /* CurrentUserProfileView.swift */; };
+		BCE4995D2BF25E8900008159 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE4995C2BF25E8900008159 /* ProfileHeaderView.swift */; };
+		BCE4995F2BF25E9400008159 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE4995E2BF25E9400008159 /* PostGridView.swift */; };
+		BCE499612BF260DE00008159 /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE499602BF260DE00008159 /* UserStatsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +34,15 @@
 		BCE499482BF21C5100008159 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		BCE4994A2BF2239B00008159 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		BCE4994C2BF224BC00008159 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		BCE4994E2BF22DC800008159 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		BCE499502BF22E1B00008159 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		BCE499522BF2453C00008159 /* TrendingHashtags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingHashtags.swift; sourceTree = "<group>"; };
+		BCE499562BF24C3900008159 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		BCE499582BF25B4800008159 /* InboxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxCell.swift; sourceTree = "<group>"; };
+		BCE4995A2BF25D7F00008159 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
+		BCE4995C2BF25E8900008159 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		BCE4995E2BF25E9400008159 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
+		BCE499602BF260DE00008159 /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +130,7 @@
 				BCE499462BF21BC200008159 /* Comments */,
 				BCE499452BF21BC100008159 /* Components */,
 				BCE499442BF21BBF00008159 /* Feed */,
-				BCE499432BF21BBE00008159 /* Notifications */,
+				BCE499432BF21BBE00008159 /* Inbox */,
 				BCE499422BF21BBD00008159 /* Profile */,
 				BCE499412BF21BBB00008159 /* Root */,
 				BCE499402BF21BBA00008159 /* Search */,
@@ -148,6 +166,9 @@
 		BCE499402BF21BBA00008159 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				BCE4994E2BF22DC800008159 /* ExploreView.swift */,
+				BCE499522BF2453C00008159 /* TrendingHashtags.swift */,
+				BCE499502BF22E1B00008159 /* UserCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -163,15 +184,21 @@
 		BCE499422BF21BBD00008159 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				BCE4995A2BF25D7F00008159 /* CurrentUserProfileView.swift */,
+				BCE4995E2BF25E9400008159 /* PostGridView.swift */,
+				BCE4995C2BF25E8900008159 /* ProfileHeaderView.swift */,
+				BCE499602BF260DE00008159 /* UserStatsView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		BCE499432BF21BBE00008159 /* Notifications */ = {
+		BCE499432BF21BBE00008159 /* Inbox */ = {
 			isa = PBXGroup;
 			children = (
+				BCE499562BF24C3900008159 /* InboxView.swift */,
+				BCE499582BF25B4800008159 /* InboxCell.swift */,
 			);
-			path = Notifications;
+			path = Inbox;
 			sourceTree = "<group>";
 		};
 		BCE499442BF21BBF00008159 /* Feed */ = {
@@ -274,11 +301,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCE4995B2BF25D7F00008159 /* CurrentUserProfileView.swift in Sources */,
 				BCE4994B2BF2239B00008159 /* FeedView.swift in Sources */,
 				BCE4994D2BF224BC00008159 /* FeedCell.swift in Sources */,
 				BCE4992D2BF21B0B00008159 /* ContentView.swift in Sources */,
 				BCE4992B2BF21B0B00008159 /* TikTokCloneApp.swift in Sources */,
+				BCE4994F2BF22DC800008159 /* ExploreView.swift in Sources */,
+				BCE4995F2BF25E9400008159 /* PostGridView.swift in Sources */,
+				BCE499612BF260DE00008159 /* UserStatsView.swift in Sources */,
 				BCE499492BF21C5100008159 /* MainTabView.swift in Sources */,
+				BCE4995D2BF25E8900008159 /* ProfileHeaderView.swift in Sources */,
+				BCE499592BF25B4800008159 /* InboxCell.swift in Sources */,
+				BCE499512BF22E1B00008159 /* UserCell.swift in Sources */,
+				BCE499572BF24C3900008159 /* InboxView.swift in Sources */,
+				BCE499532BF2453C00008159 /* TrendingHashtags.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

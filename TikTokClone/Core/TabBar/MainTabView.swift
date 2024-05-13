@@ -18,11 +18,11 @@ struct MainTabView: View {
                 .onAppear { selectedTab = 0 }
                 .tag(0)
             
-            Text("Friends")
+            ExploreView()
                 .tabItem {
                     VStack {
-                        Image(systemName: "person.2")
-                        Text("Friends")
+                        Image(systemName: "safari")
+                        Text("Explore")
                     }
                 }
                 .onAppear { selectedTab = 1 }
@@ -31,24 +31,24 @@ struct MainTabView: View {
             Text("Upload Post")
                 .tabItem {
                     VStack {
-                        Image(systemName: "plus")
-                        Text("Upload")
+                        Spacer()
+                        Image("tiktok-upload")
                     }
                 }
                 .onAppear { selectedTab = 2 }
                 .tag(2)
             
-            Text("Notifications")
+            InboxView()
                 .tabItem {
                     VStack {
-                        Image(systemName: "heart")
+                        Image(systemName: "bubble.fill")
                         Text("Inbox")
                     }
                 }
                 .onAppear { selectedTab = 3 }
                 .tag(3)
             
-            Text("Profile")
+            CurrentUserProfileView()
                 .tabItem {
                     VStack {
                         Image(systemName: "person")

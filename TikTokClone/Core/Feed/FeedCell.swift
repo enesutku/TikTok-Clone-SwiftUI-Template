@@ -9,7 +9,7 @@ struct FeedCell: View {
     var body: some View {
         ZStack {
             Rectangle()
-                    .fill(.gray)
+                .fill(.gray)
                     .containerRelativeFrame([.horizontal, .vertical])
                     .overlay {
                         Text("Post \(post)")
@@ -33,31 +33,49 @@ struct FeedCell: View {
                     
                     VStack(spacing: 28) {
                         
+                        Circle()
+                            .frame(width: 48, height: 48)
+                            .foregroundStyle(Color(.systemGray2))
+                        
                     Button(action: {
                         print("DEBUG: Like Button")
                     }, label: {
-                        Image(systemName: "heart.fill")
-                            .resizable()
-                            .frame(width: 28, height: 28)
-                            .foregroundStyle(.white)
+                        VStack {
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .frame(width: 28, height: 28)
+                                .foregroundStyle(.white)
+                            
+                            Text("27K")
+                                .font(.caption)
+                                .foregroundStyle(.white)
+                                .bold()
+                        }
                     })
                         
                     Button(action: {
                         print("DEBUG: Comment Button")
                     }, label: {
-                        Image(systemName: "ellipsis.bubble.fill")
-                            .resizable()
-                            .frame(width: 28, height: 28)
-                            .foregroundStyle(.white)
+                        VStack {
+                            Image(systemName: "ellipsis.bubble.fill")
+                                .resizable()
+                                .frame(width: 28, height: 28)
+                                .foregroundStyle(.white)
+                            
+                            Text("135")
+                                .font(.caption)
+                                .foregroundStyle(.white)
+                                .bold()
+                        }
                     })
                         
                     Button(action: {
                         print("DEBUG: Bookmark Button")
                     }, label: {
-                        Image(systemName: "bookmark.fill")
-                            .resizable()
-                            .frame(width: 22, height: 28)
-                            .foregroundStyle(.white)
+                            Image(systemName: "bookmark.fill")
+                                .resizable()
+                                .frame(width: 22, height: 28)
+                                .foregroundStyle(.white)
                     })
                         
                     Button(action: {
@@ -69,8 +87,18 @@ struct FeedCell: View {
                             .foregroundStyle(.white)
                     })
                         
+                    Button(action: {
+                        print("DEBUG: Sound Button")
+                    }, label: {
+                        Image("discIcon")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .foregroundStyle(.white)
+                        })
+                        
                     }
                 }
+                .padding(.bottom, 80)
                 .padding()
             }
         }
