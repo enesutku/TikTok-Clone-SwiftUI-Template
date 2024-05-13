@@ -6,7 +6,7 @@ import SwiftUI
 struct TikTokCloneApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
     }
 }
