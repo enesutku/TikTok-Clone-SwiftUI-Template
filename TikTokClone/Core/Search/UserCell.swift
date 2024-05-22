@@ -7,7 +7,7 @@ struct UserCell: View {
         HStack(spacing: 12) {
             Image(systemName: "person.circle.fill")
                 .resizable()
-                .frame(width: 48, height: 48)
+                .frame(width: 46, height: 46)
                 .foregroundStyle(Color(.systemGray4))
             
             VStack(alignment: .leading, content: {
