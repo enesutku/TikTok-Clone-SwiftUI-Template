@@ -12,7 +12,7 @@ struct InboxView: View {
                             VStack {
                                     Image(systemName: "person.circle.fill")
                                         .resizable()
-                                        .frame(width: 80, height: 80)
+                                        .frame(width: 70, height: 70)
                                         .foregroundStyle(Color(.systemGray4))
                                         .padding(.bottom, 5)
                                 Text("Username")
@@ -42,8 +42,6 @@ struct InboxView: View {
                     .padding(.top)
                 }
             }
-                .navigationTitle("Inbox")
-                .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
